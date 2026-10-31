@@ -21,6 +21,8 @@
   Cycles renders if available). Generator: `scienetist/fig4_cad.py`.
   Caption: team CAD geometry; mixer CFD setup Sec 6 / results Fig 5;
   Venturi CFD PENDING.
-- Figure rules: numbered, captioned, legible in print/B&W, cited if not ours.
-  No clipped content, no missing-glyph boxes. SIMULATED / ESTIMATED / PROPOSED
-  labels mandatory.
+- `Figure7_energy_comparison.png` — Figure 7 (ESTIMATED): power + per-m3 cost bars,
+  MIZAN 0.43 MW vs onshore 2:1 alternatives 2.56 / 5.12 MW (Sec. 4 basis, same flow
+  and 51.7 ppt target). Generator: `scienetist/fig7_energy.py`.
+- `Figure8_scaleup_pathway.png` — Figure 8 (PROPOSED): S1 lab rig to S4 full
+  deployment with stage gates. Generator: `scienetist/fig8_pathway.py`.
