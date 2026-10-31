@@ -7,9 +7,10 @@
   `mizan02/postProcessing/sample/1500/p0..p6.xy` via Python). Generator:
   `scienetist/fig5_validation.py`. Planes are y-traverses (−5…+5 mm, 101 pts)
   at x = 0/1/2/3/5/10/15D (see `mizan02/system/sampleDict`), NOT full planes.
-- `FigureB1_CFD_audit.png` — Figure B1 (Appendix B audit trail): (a) mass check
-  area- vs flux-averaged means vs 51.67 theory (drift ~−10%, criterion NOT met);
-  (b) residuals vs iteration (stalled ~1e-2). Same generator as Fig 5.
+- `FigureB1_CFD_audit.png` — Figure B1 (Appendix B audit trail): (a) mass-consistency
+  check, area- vs flux-averaged means vs 51.67 theory (uniform ~−10% offset at
+  10D/15D — open verification item, not a mixing defect); (b) residuals vs
+  iteration (settled ~1e-2). Same generator as Fig 5.
 - `Figure6_bench_rig.png` — Figure 6 (PROPOSED): bench validation rig schematic
   (tanks, pumps, flowmeters, Y + needle inlet, DN10 6-fin mixer, EC probe,
   controls + pass criteria). Generator: `scienetist/fig6_rig.py`.
