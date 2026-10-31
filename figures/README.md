@@ -12,9 +12,13 @@
 - `Figure6_bench_rig.png` — Figure 6 (PROPOSED): bench validation rig schematic
   (tanks, pumps, flowmeters, Y + needle inlet, DN10 6-fin mixer, EC probe,
   controls + pass criteria). Generator: `scienetist/fig6_rig.py`.
-- Figure 4 (missing — TEAM TODO): lab mixer + Venturi CAD renders. Export via
-  Blender F12 (1920×1080, Cycles), never viewport screenshots. Caption: team CAD
-  geometry; CFD setup Sec 6 / results Fig 5.
+- `Figure4_CAD_geometry.png` — Figure 4 (team CAD geometry): (a) MIZAN-02 mixer
+  section from `mizan02/constant/triSurface/mizan_02.stl` (wall ghosted, 6 fins
+  solid); (b) Venturi eductor from `Venturi throat.stl` (cutaway, translucent).
+  Rendered with matplotlib 3D (no Blender on build machine — replace with F12
+  Cycles renders if available). Generator: `scienetist/fig4_cad.py`.
+  Caption: team CAD geometry; mixer CFD setup Sec 6 / results Fig 5;
+  Venturi CFD PENDING.
 - Figure rules: numbered, captioned, legible in print/B&W, cited if not ours.
   No clipped content, no missing-glyph boxes. SIMULATED / ESTIMATED / PROPOSED
   labels mandatory.
