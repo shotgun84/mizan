@@ -1,7 +1,7 @@
 # cad/ — CAD exports + print notes
 
 ## Files (repo root)
-- `Static mixer.stl` — measured 54 dia × 250 long (axis Y), 3416 facets, watertight ✓. Slice at 0.2 mm layers, 3 walls. Confirm mm units in slicer.
+- `Static mixer.stl` — measured 54 dia × 250 long (axis Y), 3416 facets, watertight ✓. Generator: `mixer_A_kenics.py` (60 mm bore, 200 mm long, 4x45 mm Kenics ribbons). NOTE: this is a 4-element print-trial variant — NOT the 6-element MIZAN-02 rig/CFD geometry (`mizan02/.../mizan_02.stl`, DN10 N6). Do not present it as the validated mixer. Slice at 0.2 mm layers, 3 walls. Confirm mm units in slicer.
 - `Venturi throat.stl` — measured 0.2 × 0.2 × 0.1 file units (probably metres → 200 dia × 100 long, axis Z), 59518 facets, NOT watertight (see MANIFEST). Repair first, save repaired copy under a new name, never overwrite the original. Confirm scale vs the mixer STL before printing them together (units differ).
 
 ## Generator provenance — TEAM TODO (required before calling these reproducible)
