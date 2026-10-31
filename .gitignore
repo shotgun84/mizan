@@ -22,3 +22,5 @@ Thumbs.db
 .DS_Store
 # Big exports go via Drive/OS link, not git
 *.mp4
+# Report drafts live outside the repo (keeps evidence pack clean)
+*.docx
