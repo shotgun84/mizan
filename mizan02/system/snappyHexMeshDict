@@ -1,0 +1,10 @@
+FoamFile{format ascii;class dictionary;location "system";object snappyHexMeshDict;}
+castellatedMesh true;snap true;addLayers true;
+geometry {mixer{type triSurfaceMesh;file "mizan_02.stl";}}
+castellatedMeshControls {maxLocalCells 200000;maxGlobalCells 400000;minRefinementCells 10;nCellsBetweenLevels 3;
+features ();refinementSurfaces {mixer{level (2 3);patchInfo{type wall;name mixerWall;}}}
+resolveFeatureAngle 30;refinementRegions {}locationInMesh (0.02 0 0);allowFreeStandingZoneFaces true;}
+snapControls {nSmoothPatch 3;tolerance 2.0;nSolveIter 30;nRelaxIter 5;}
+addLayersControls {relativeSizes true;layers {mixerWall{nSurfaceLayers 5;}}expansionRatio 1.2;finalLayerThickness 0.5;minThickness 0.1;nGrow 0;featureAngle 60;nRelaxIter 3;nSmoothSurfaceNormals 1;nSmoothNormals 3;nSmoothThickness 10;maxFaceThicknessRatio 0.5;maxThicknessToMedialRatio 0.3;minMedialAxisAngle 90;nBufferCellsNoExtrude 0;nLayerIter 50;}
+meshQualityControls {#includeEtc "caseDicts/mesh/generation/meshQualityDict"}
+writeFlags (scalarLevels layerSets);mergeTolerance 1e-6;

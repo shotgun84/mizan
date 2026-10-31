@@ -1,0 +1,47 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-7b05503f98a8
+Exec   : foamPostProcess -latestTime -func sample
+Date   : Sep 19 2026
+Time   : 02:04:24
+Host   : "ImranAsus"
+PID    : 19126
+I/O    : uncollated
+Case   : /home/owais/OpenFOAM/run/mizan02
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1500
+
+
+Constructing functionObjects from system/functions
+    Selecting sets with name sample
+        Reading set description:
+            p0
+            p1
+            p2
+            p3
+            p4
+            p5
+            p6
+Time = 1500s
+
+Reading fields:
+    volScalarFields: p CUsing dynamicCode for codedFixedValue cInlet at line 691518 in "/home/owais/OpenFOAM/run/mizan02/1500/C!boundaryField/seaInlet"
+
+    volVectorFields: U
+
+Executing functionObjects
+
+End
+

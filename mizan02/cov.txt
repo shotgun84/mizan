@@ -1,0 +1,8 @@
+x=0D Cbar=52.48 CoV=0.2069 MI=0.7931 merr=+1.58%
+x=1D Cbar=52.41 CoV=0.2063 MI=0.7937 merr=+1.43%
+x=2D Cbar=52.34 CoV=0.2059 MI=0.7941 merr=+1.29%
+x=3D Cbar=52.27 CoV=0.2055 MI=0.7945 merr=+1.17%
+x=5D Cbar=52.17 CoV=0.2046 MI=0.7954 merr=+0.96%
+x=10D Cbar=45.82 CoV=0.0342 MI=0.9658 merr=-11.32%
+x=15D Cbar=46.68 CoV=0.0084 MI=0.9916 merr=-9.66%
+dP=8.5 Pa K=0.01

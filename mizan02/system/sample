@@ -1,0 +1,44 @@
+FoamFile{format ascii;class dictionary;location "system";object sample;}
+type sets;
+libs ("libsampling.so");
+interpolationScheme cellPoint;
+setFormat raw;
+sets
+{
+    p0
+    {
+        type lineUniform; axis y;
+        start (0 -0.005 0); end (0 0.005 0); nPoints 101;
+    }
+    p1
+    {
+        type lineUniform; axis y;
+        start (0.01 -0.005 0); end (0.01 0.005 0); nPoints 101;
+    }
+    p2
+    {
+        type lineUniform; axis y;
+        start (0.02 -0.005 0); end (0.02 0.005 0); nPoints 101;
+    }
+    p3
+    {
+        type lineUniform; axis y;
+        start (0.03 -0.005 0); end (0.03 0.005 0); nPoints 101;
+    }
+    p4
+    {
+        type lineUniform; axis y;
+        start (0.05 -0.005 0); end (0.05 0.005 0); nPoints 101;
+    }
+    p5
+    {
+        type lineUniform; axis y;
+        start (0.1 -0.005 0); end (0.1 0.005 0); nPoints 101;
+    }
+    p6
+    {
+        type lineUniform; axis y;
+        start (0.15 -0.005 0); end (0.15 0.005 0); nPoints 101;
+    }
+}
+fields (C U p);

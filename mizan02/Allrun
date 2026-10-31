@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+blockMesh
+snappyHexMesh -overwrite
+checkMesh
+foamRun -solver incompressibleFluid

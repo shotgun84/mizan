@@ -1,0 +1,24 @@
+# OpenFOAM raw output: time dirs + mesh + VTK total ~8 GB. NEVER commit (GitHub 100 MB/file cap).
+# Tracked instead: system/*, constant/* EXCEPT polyMesh, 0/ initial+BC fields,
+# postProcessing/sample + residuals, logs excerpts, tri-surface STL, setup notes, results tables.
+# NOTE: 0/ is intentionally TRACKED (initial + boundary conditions, KBs). Only numbered
+# RESULT dirs are excluded:
+mizan02/[1-9]*/
+mizan02/[1-9][0-9]*/
+mizan02/[1-9][0-9][0-9]*/
+mizan02/[1-9][0-9][0-9][0-9]*/
+mizan02/processor*/
+mizan02/VTK/
+mizan02/dynamicCode/
+mizan02/constant/polyMesh/
+# Blender working files (keep STLs + generator scripts, not .blend bloat)
+*.blend
+*.blend1
+# Python caches
+__pycache__/
+*.pyc
+# OS junk
+Thumbs.db
+.DS_Store
+# Big exports go via Drive/OS link, not git
+*.mp4

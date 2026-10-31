@@ -1,0 +1,44 @@
+
+postProcess has been superseded and replaced by the more general foamPostProcess
+utility which will be executed instead:
+
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-7b05503f98a8
+Exec   : foamPostProcess -func sampleDict
+Date   : Sep 19 2026
+Time   : 00:51:52
+Host   : "ImranAsus"
+PID    : 14836
+I/O    : uncollated
+Case   : /home/owais/OpenFOAM/run/mizan02
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+Constructing functionObjects from system/functions
+    Selecting sets with name sampleDict
+
+
+--> FOAM FATAL IO ERROR: 
+wrong token type - expected string, found on line 2 the word 'sampling'
+
+file: /home/owais/OpenFOAM/run/mizan02/system/sampleDict/sampleDict/libs at line 2.
+
+    From function Foam::Istream& Foam::operator>>(Istream&, fileName&)
+    in file primitives/strings/fileName/fileNameIO.C at line 56.
+
+FOAM exiting
+

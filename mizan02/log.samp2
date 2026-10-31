@@ -1,0 +1,170 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-7b05503f98a8
+Exec   : foamPostProcess -func sampleSets
+Date   : Sep 19 2026
+Time   : 02:02:46
+Host   : "ImranAsus"
+PID    : 16551
+I/O    : uncollated
+Case   : /home/owais/OpenFOAM/run/mizan02
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+
+--> FOAM FATAL IO ERROR: 
+Cannot find configuration file sampleSets
+
+Available configured objects:
+127
+(
+CourantNo
+Lambda2
+MachNo
+PecletNo
+Q
+Qdot
+add
+adjustTimeStepToChemistry
+adjustTimeStepToReaction
+age
+bXiProgress
+bXiQdot
+boundaryProbes
+cellMax
+cellMaxMag
+cellMin
+cellMinMag
+cellSum
+checkMesh
+components
+cutPlaneSurface
+cylindrical
+ddt
+div
+divide
+dsmcFields
+energyAdvectiveFlux
+energyFlux
+enstrophy
+faceZoneAverage
+faceZoneFlowRate
+faceZoneFlux
+fieldAverage
+flowType
+forceCoeffsCompressible
+forceCoeffsIncompressible
+forcesCompressible
+forcesIncompressible
+grad
+graphCell
+graphCellFace
+graphCutLayerAverage
+graphFace
+graphLayerAverage
+graphPatchCutLayerAverage
+graphUniform
+heatFlux
+interfaceHeight
+internalProbes
+isoSurface
+log
+mag
+magSqr
+massFractions
+moleFractions
+multiValveEngineState
+multiply
+particles
+patchAverage
+patchDifference
+patchFlowRate
+patchFlux
+patchIntegrate
+patchSurface
+phaseForces
+phaseMap
+phaseScalarTransport
+populationBalanceMoments
+populationBalanceSetPhaseSizeDistribution
+populationBalanceSetSizeDistribution
+populationBalanceSizeDistribution
+power
+probes
+randomise
+reactionRates
+reconstruct
+removeObjects
+residuals
+scalarTransport
+scale
+shearStress
+specieAdvectiveFlux
+specieDiffusiveFlux
+specieFlux
+specieReactionRates
+staticPressureIncompressible
+stopAtClockTime
+stopAtEmptyClouds
+stopAtFile
+stopAtTimeStep
+streamFunction
+streamlinesLine
+streamlinesPatch
+streamlinesPoints
+streamlinesSphere
+subtract
+surfaceInterpolate
+time
+timeStep
+totalEnthalpy
+totalPressureCompressible
+totalPressureIncompressible
+tr
+triSurfaceAverage
+triSurfaceDifference
+triSurfaceVolumetricFlowRate
+turbulenceFields
+turbulenceIntensity
+ubAverage
+ubDWEA
+uniform
+userTimeStep
+volAverage
+volField
+volIntegrate
+vorticity
+wallBoilingProperties
+wallBoilingProperty
+wallHeatFlux
+wallHeatTransferCoeff
+wallShearStress
+writeCellCentres
+writeCellVolumes
+writeMesh
+writeObjects
+writeVTK
+yPlus
+)
+
+
+file: /home/owais/OpenFOAM/run/mizan02/system/functions
+
+    From function bool Foam::readConfigFile(const word&, const Tuple2<string, int>&, dictionary&, const fileName&, const word&, const word&, const string&)
+    in file db/dictionary/dictionaryIO.C at line 520.
+
+FOAM exiting
+

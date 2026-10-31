@@ -1,0 +1,19 @@
+# Inputs for reproduce.py — ASSUMED reference case (change here, rerun, paste into report)
+Q_brine: 6.283      # m3/s, 2m pipe at 2 m/s
+S_brine: 70.0        # ppt
+S_sea: 42.5          # ppt ambient Gulf example
+ratio_onshore: 0.5  # seawater:brine
+eta_pump: 0.75
+tariff_AED_per_kWh: 0.44
+lift_m: 5.0                 # ASSUMED static lift (example)
+offshore_L_m: 800.0         # ASSUMED example length
+roughness_m: 0.00005
+rho_brine: 1052.0
+rho_sea: 1032.0
+mu: 0.00108
+g: 9.81
+recovery: 0.42              # product/feed, for Taweelah illustration only
+taweelah_product_m3day: 909200.0
+mixer_Z: 6.0                # ESTIMATED multiplier, range 4-8
+venturi_loss_factor: 1.3
+venturi_extra_m: 0.5

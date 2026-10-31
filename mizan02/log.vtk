@@ -1,0 +1,43 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-7b05503f98a8
+Exec   : foamToVTK -latestTime
+Date   : Sep 20 2026
+Time   : 15:11:09
+Host   : "ImranAsus"
+PID    : 1147
+I/O    : uncollated
+Case   : /home/owais/OpenFOAM/run/mizan02
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1500
+
+Time: 1500
+Using dynamicCode for codedFixedValue cInlet at line 691518 in "/home/owais/OpenFOAM/run/mizan02/1500/C!boundaryField/seaInlet"
+    volScalarFields            : p C nut k omega
+    volVectorFields            : U
+
+    Internal  : "/home/owais/OpenFOAM/run/mizan02/VTK/mizan02_1500.vtk"
+    Original cells:691491 points:820793   Additional cells:835776  additional points:66091
+
+Combining patches:
+    patch 0 seaInlet
+    patch 1 outlet
+    patch 2 mixer
+    Patch     : "/home/owais/OpenFOAM/run/mizan02/VTK/seaInlet/seaInlet_1500.vtk"
+    Patch     : "/home/owais/OpenFOAM/run/mizan02/VTK/outlet/outlet_1500.vtk"
+    Patch     : "/home/owais/OpenFOAM/run/mizan02/VTK/mixer/mixer_1500.vtk"
+    surfScalarFields  : phi
+End
+

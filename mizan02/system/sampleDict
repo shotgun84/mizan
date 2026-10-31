@@ -1,0 +1,11 @@
+FoamFile{format ascii;class dictionary;location "system";object sampleDict;}
+type sets;libs (sampling);writeControl writeTime;setFormat raw;
+interpolationScheme cellPoint;fields (C U p);
+sets (p0{type uniform;axis y;start (0 -0.005 0);end (0 0.005 0);nPoints 101;}
+p1{type uniform;axis y;start (0.01 -0.005 0);end (0.01 0.005 0);nPoints 101;}
+p2{type uniform;axis y;start (0.02 -0.005 0);end (0.02 0.005 0);nPoints 101;}
+p3{type uniform;axis y;start (0.03 -0.005 0);end (0.03 0.005 0);nPoints 101;}
+p4{type uniform;axis y;start (0.05 -0.005 0);end (0.05 0.005 0);nPoints 101;}
+p5{type uniform;axis y;start (0.1 -0.005 0);end (0.1 0.005 0);nPoints 101;}
+p6{type uniform;axis y;start (0.15 -0.005 0);end (0.15 0.005 0);nPoints 101;}
+);

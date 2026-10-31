@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  14
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 14-7b05503f98a8
+Exec   : foamPostProcess -latestTime -func sample
+Date   : Sep 19 2026
+Time   : 02:03:48
+Host   : "ImranAsus"
+PID    : 18596
+I/O    : uncollated
+Case   : /home/owais/OpenFOAM/run/mizan02
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 1500
+
+
+Constructing functionObjects from system/functions
+    Selecting sets with name sample
+
+
+--> FOAM FATAL ERROR: 
+Unknown sample set type uniform
+
+The sample set type uniform has been renamed lineUniform
+
+Replace "type uniform;" with "type lineUniform;" for the set p0 in "/home/owais/OpenFOAM/run/mizan02/system/sample/sample/sets/p0"
+
+    From function static Foam::autoPtr<Foam::sampledSet> Foam::sampledSet::New(const Foam::word&, const Foam::polyMesh&, const Foam::dictionary&)
+    in file sampledSet/sampledSet/sampledSet.C at line 186.
+
+FOAM exiting
+
